@@ -462,10 +462,11 @@ section {
 }
 
 .hero-avatar {
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 25%;
     border: 4px solid white;
     box-shadow: var(--shadow-lg);
 }
@@ -505,6 +506,11 @@ section {
     .placeholder-img {
         width: 200px;
         height: 200px;
+    }
+
+    .hero-avatar {
+        width: 180px;
+        height: 180px;
     }
 
     .projects-grid {

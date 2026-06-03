@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品库 | 信息管理与信息系统</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">我的作品库</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">项目作品</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="菜单">☰</button>
+        </div>
+    </nav>
+
+    <!-- 首页 Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>你好，我是 <span class="highlight">蒋莫凡</span></h1>
+                <p class="subtitle">信息管理与信息系统专业 | 数据分析 · 前端开发 · 产品设计</p>
+                <p class="description">
+                    具备技术与业务双视角，能够独立完成从需求分析、产品设计到开发落地的全流程。
+                    擅长通过数据驱动决策，关注用户体验与产品价值。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 可以换成你的个人照片 -->
+                <div class="placeholder-img">个人照片/头像</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目作品 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">项目作品</h2>
+            <p class="section-desc">以下是我近期参与的四个代表性项目，涵盖产品设计、前端开发与数据分析</p>
+            
+            <div class="projects-grid">
+                <!-- 项目1：大创小程序原型 -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="placeholder-img">项目截图 1</div>
+                        <div class="project-tag">产品设计</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>大创项目小程序原型设计</h3>
+                        <p>独立完成小程序全部页面的原型设计，从需求分析到交互设计的完整产品实践。</p>
+                        <div class="project-tags">
+                            <span>原型设计</span>
+                            <span>交互设计</span>
+                            <span>产品思维</span>
+                        </div>
+                        <button class="btn-detail">查看详情 →</button>
+                    </div>
+                </div>
+
+                <!-- 项目2：小程序前端页面 -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <div class="placeholder-img">项目截图 2</div>
+                        <div class="project-tag">前端开发</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>小程序前端页面开发</h3>
+                        <p>负责小程序前端页面的开发与实现，关注页面性能与用户体验优化。</p>
+                        <div class="project-tags">
+                            <span>小程序</span>
+                            <span>前端开发</span>
+                            <span>UI实现</span>
+                        </div>
+                        <button class="btn-detail">查看详情 →</button>
+                    </div>
+                </div>
+
+                <!-- 项目3：拼豆小程序 -->
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <div class="placeholder-img">项目截图 3</div>
+                        <div class="project-tag">前端开发</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>拼豆小程序 — 图纸扫描功能</h3>
+                        <p>针对拼豆爱好者开发的图纸扫描识别功能，实现图片到像素图纸的自动转换。</p>
+                        <div class="project-tags">
+                            <span>图像处理</span>
+                            <span>小程序</span>
+                            <span>功能创新</span>
+                        </div>
+                        <button class="btn-detail">查看详情 →</button>
+                    </div>
+                </div>
+
+                <!-- 项目4：数据分析 -->
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <div class="placeholder-img">项目截图 4</div>
+                        <div class="project-tag">数据分析</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>招聘岗位数据爬虫与分析</h3>
+                        <p>爬取实习僧、51job 等平台 2000+ 岗位信息，进行数据清洗与网络分析，挖掘岗位需求趋势。</p>
+                        <div class="project-tags">
+                            <span>Python爬虫</span>
+                            <span>数据清洗</span>
+                            <span>数据可视化</span>
+                        </div>
+                        <button class="btn-detail">查看详情 →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>教育背景</h3>
+                    <p><strong>华中科技大学</strong> — 信息管理与信息系统专业（[入学年份]-[毕业年份]）</p>
+                    
+                    <h3>技能概览</h3>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h4>数据分析</h4>
+                            <p>Python · SQL · Excel · 数据可视化</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>前端开发</h4>
+                            <p>HTML/CSS/JS · 小程序开发 · Vue/React（根据实际情况修改）</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>产品设计</h4>
+                            <p>原型设计 · 交互设计 · 需求分析 · Axure/Figma</p>
+                        </div>
+                    </div>
+
+                    <h3>自我评价</h3>
+                    <p>
+                        信管专业背景让我兼具技术实现能力与业务理解能力。
+                        在产品设计中能考虑技术可行性，在开发中能理解业务价值。
+                        善于通过数据发现问题，通过产品解决问题。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <p class="section-desc">欢迎交流，期待与您的合作机会</p>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h4>邮箱</h4>
+                    <p>your.email@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h4>电话/微信</h4>
+                    <p>17877816035</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💻</div>
+                    <h4>GitHub</h4>
+                    <p><a href="#" target="_blank">github.com/yourname</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 [你的名字] · 个人作品库 · 使用 HTML/CSS/JS 构建</p>
+        </div>
+    </footer>
+
+    <!-- 项目详情弹窗 -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- 动态填充内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

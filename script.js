@@ -19,7 +19,7 @@ const projectData = {
             <p>[请填写：完成了多少个页面？是否获得了大创立项/奖项？用户反馈如何？]</p>
             
             <h3>相关链接</h3>
-            <p><a href="#" target="_blank">原型链接（请替换）</a> | <a href="#" target="_blank">项目文档</a></p>
+            <p><a href="https://modao.cc/proto/NwGYhccGsswugzAERvYiS/sharing?view_mode=read_only&screen=rbpTdwxzmGG86uF9y" target="_blank">🔵 点击体验原型交互</a></p>
         `
     },
     2: {

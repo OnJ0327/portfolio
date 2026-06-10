@@ -5,19 +5,9 @@ const projectData = {
         title: "校园绿化管理小程序",
         tag: "原型设计 · 前端开发",
         content: `
-            <div class="carousel" data-carousel="project1">
-                <div class="carousel-track">
-                    <img src="photo/项目1_1.webp" alt="项目截图1">
-                    <img src="photo/项目1_2.webp" alt="项目截图2" loading="lazy">
-                    <img src="photo/项目1_3.webp" alt="项目截图3" loading="lazy">
-                    <img src="photo/项目1_4.webp" alt="项目截图4" loading="lazy">
-                    <img src="photo/项目1_5.webp" alt="项目截图5" loading="lazy">
-                    <img src="photo/项目1_6.webp" alt="项目截图6" loading="lazy">
-                    <img src="photo/项目1_7.webp" alt="项目截图7" loading="lazy">
-                </div>
-                <button class="carousel-btn carousel-prev">‹</button>
-                <button class="carousel-btn carousel-next">›</button>
-                <div class="carousel-dots"></div>
+            <div style="text-align:center; margin-bottom:24px; background:#f1f5f9; border-radius:12px; padding:20px;">
+                <img src="photo/demo.gif" alt="项目演示GIF" style="max-width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <p style="color:var(--text-secondary); font-size:0.85rem; margin-top:12px;">👆 项目功能演示（GIF自动播放）</p>
             </div>
             <h3>背景与问题</h3>
             <p>在调研中发现，校园绿化管理长期依赖纸质档案和人工记忆，植物信息分散且静态化，师生和游客难以获取准确的植被分布与生态资讯，后勤部门也面临数据随人员流动而丢失的风险。</p>
@@ -32,7 +22,7 @@ const projectData = {
             <p>我独立交付了包含地图交互、管理后台、公告与植物库在内的完整前端系统，实现了从需求对接到真实 API 对接的全流程落地。这次经历让我深刻体会到跨端开发中"平台差异"的隐蔽性，后续我会在项目初期就建立更完善的双端自动化测试覆盖。</p>
             
             <h3>相关链接</h3>
-            <p><a href="https://modao.cc/proto/NwGYhccGsswugzAERvYiS/sharing?view_mode=read_only&screen=rbpTdwxzmGG86uF9y" target="_blank">🔵 点击体验原型交互</a> | <a href="#" target="_blank">代码仓库（请替换）</a></p>
+            <p><a href="https://modao.cc/proto/NwGYhccGsswugzAERvYiS/sharing?view_mode=read_only&screen=rbpTdwxzmGG86uF9y" target="_blank">🔵 点击体验原型交互</a></p>
         `
     },
     2: {

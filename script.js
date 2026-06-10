@@ -5,7 +5,20 @@ const projectData = {
         title: "校园绿化管理小程序",
         tag: "前端开发",
         content: `
-            <div class="placeholder-img">项目截图/原型展示图</div>
+            <div class="carousel" data-carousel="project1">
+                <div class="carousel-track">
+                    <img src="photo/项目1_1.png" alt="项目截图1">
+                    <img src="photo/项目1_2.png" alt="项目截图2">
+                    <img src="photo/项目1_3.png" alt="项目截图3">
+                    <img src="photo/项目1_4.png" alt="项目截图4">
+                    <img src="photo/项目1_5.png" alt="项目截图5">
+                    <img src="photo/项目1_6.png" alt="项目截图6">
+                    <img src="photo/项目1_7.png" alt="项目截图7">
+                </div>
+                <button class="carousel-btn carousel-prev">‹</button>
+                <button class="carousel-btn carousel-next">›</button>
+                <div class="carousel-dots"></div>
+            </div>
             <h3>背景与问题</h3>
             <p>在调研中发现，校园绿化管理长期依赖纸质档案和人工记忆，植物信息分散且静态化，师生和游客难以获取准确的植被分布与生态资讯，后勤部门也面临数据随人员流动而丢失的风险。</p>
             
@@ -111,6 +124,7 @@ document.querySelectorAll('.project-card').forEach(card => {
             `;
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            initCarousels();
         }
     });
 });
@@ -162,6 +176,44 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+
+// 轮播图初始化
+function initCarousels() {
+    document.querySelectorAll('.carousel').forEach(carousel => {
+        if (carousel.dataset.initialized) return;
+        carousel.dataset.initialized = 'true';
+        
+        const track = carousel.querySelector('.carousel-track');
+        const slides = carousel.querySelectorAll('img');
+        const prev = carousel.querySelector('.carousel-prev');
+        const next = carousel.querySelector('.carousel-next');
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+        let current = 0;
+        
+        slides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goTo(i));
+            dotsContainer.appendChild(dot);
+        });
+        
+        function goTo(index) {
+            current = index;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            dotsContainer.querySelectorAll('span').forEach((d, i) => {
+                d.classList.toggle('active', i === current);
+            });
+        }
+        
+        prev.addEventListener('click', () => {
+            goTo((current - 1 + slides.length) % slides.length);
+        });
+        
+        next.addEventListener('click', () => {
+            goTo((current + 1) % slides.length);
+        });
+    });
+}
 
 // 导航栏滚动效果
 let lastScroll = 0;

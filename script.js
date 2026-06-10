@@ -3,7 +3,7 @@
 const projectData = {
     1: {
         title: "校园绿化管理小程序",
-        tag: "前端开发",
+        tag: "原型设计 · 前端开发",
         content: `
             <div class="carousel" data-carousel="project1">
                 <div class="carousel-track">

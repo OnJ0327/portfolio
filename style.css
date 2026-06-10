@@ -483,7 +483,7 @@ section {
 .carousel-track {
     display: flex;
     transition: transform 0.3s ease;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .carousel-track img {

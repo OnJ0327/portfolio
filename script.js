@@ -8,12 +8,12 @@ const projectData = {
             <div class="carousel" data-carousel="project1">
                 <div class="carousel-track">
                     <img src="photo/项目1_1.png" alt="项目截图1">
-                    <img src="photo/项目1_2.png" alt="项目截图2">
-                    <img src="photo/项目1_3.png" alt="项目截图3">
-                    <img src="photo/项目1_4.png" alt="项目截图4">
-                    <img src="photo/项目1_5.png" alt="项目截图5">
-                    <img src="photo/项目1_6.png" alt="项目截图6">
-                    <img src="photo/项目1_7.png" alt="项目截图7">
+                    <img src="photo/项目1_2.png" alt="项目截图2" loading="lazy">
+                    <img src="photo/项目1_3.png" alt="项目截图3" loading="lazy">
+                    <img src="photo/项目1_4.png" alt="项目截图4" loading="lazy">
+                    <img src="photo/项目1_5.png" alt="项目截图5" loading="lazy">
+                    <img src="photo/项目1_6.png" alt="项目截图6" loading="lazy">
+                    <img src="photo/项目1_7.png" alt="项目截图7" loading="lazy">
                 </div>
                 <button class="carousel-btn carousel-prev">‹</button>
                 <button class="carousel-btn carousel-next">›</button>
